@@ -1,0 +1,47 @@
+@import "library";
+@import "reset";
+
+// Global templates
+
+%group:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+%container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+// Global tags
+
+body {
+    font-family: "Omnes", Helvetica;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: .4em;
+}
+
+a {
+    color: #800000;
+}
+
+// Everything else
+
+form {
+    @extend %container;
+}
+
+fieldset {
+    margin-bottom: 1.5em;
+}
+
+label {
+    margin-right: 10px;
+}
