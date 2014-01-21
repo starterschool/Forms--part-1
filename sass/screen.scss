@@ -20,7 +20,7 @@ body {
     font-family: "Omnes", Helvetica;
     font-size: 20px;
     line-height: 26px;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 h2 {
@@ -44,4 +44,12 @@ fieldset {
 
 label {
     margin-right: 10px;
+}
+
+button {
+    background:lightblue;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
 }
