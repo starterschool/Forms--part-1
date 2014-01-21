@@ -23,8 +23,18 @@ body {
     padding: 30px 0;
 }
 
+h1 {
+    font-size: 34px;
+    margin-bottom: 1em;
+    font-weight: bold;
+
+    a {
+        text-decoration: none;
+    }
+}
+
 h2 {
-    font-size: 30px;
+    font-size: 26px;
     margin-bottom: .4em;
 }
 
