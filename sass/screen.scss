@@ -1,6 +1,8 @@
 @import "library";
 @import "reset";
 
+@import "compass/css3/transition";
+
 // Global templates
 
 %group:after {
@@ -11,7 +13,7 @@
 
 %container {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 500px;
 }
 
 // Global tags
@@ -72,10 +74,17 @@ input[type=checkbox] {
         border-radius: 20px;
         padding: .4em .8em;
         border: 1px solid #eee;
+        @include transition(all 500ms ease);
+
+        &:hover {
+            background:yellow;
+        }
     }
 
     &:checked + label {
         background:lightgreen;
+        font-size: 40px;
+        border-radius: 0;
 
         &:before {
             content: "✓ ";
